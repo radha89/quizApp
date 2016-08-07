@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<!--
+/**
+ * Created by radhabhambwani on 2015-06-13.
+ */
+-->
+<html>
+<head>
+    <title>Quiz</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/trivia.css" rel="stylesheet">
+    <script src="./javascript/jquery.js"></script>
+    <script src="./javascript/trivia.js"></script>
+</head>
+
+
+<body>
+<div id="background">
+        <div id="main">
+            <header id="heading">
+                <h1>Trivia Game</h1>
+            </header>
+            <div id="wrapper">
+                <div id="container">
+                    <div id="login">
+                        <h3>Username: <label for="username"><input id="username" type="text" name="username" value=""></label></h3>
+
+                        <h3>Password: <label for="password"><input id="password" type="password" name="password" value=""></label></h3>
+
+                        <input id="loginButton" type="button" name="Login" value="Login">
+                        <br />
+                        <br />
+
+                        <h5>OR</h5>
+
+                        <input id="clickToRegister" type="button" name="clickToRegister" value="Click here to register">
+                        <br />
+                    </div>
+                    <div id="regPage">
+                        <h4><label for="firstName">First Name: <input id="firstName" type="text" name="regField"></label></h4>
+
+                        <h4><label for="lastName">Last Name: <input id="lastName" type="text" name="regField"></label></h4>
+
+                        <h4><label for="selUsername">Pick a Username: <input id="selUsername" type="text" name="regField"></label></h4>
+
+                        <h4><label for="setPw">Create Password: <input id="setPw" type="password" name="regField"></label></h4>
+
+                        <h4><label for="confirmPw">Confirm Password: <input id="confirmPw" type="password" name="regField"></label></h4>
+
+                        <input id="register" type="button" name="registerNewUser" value="Register">
+                    </div>
+                    <br />
+                    <br />
+                </div>
+                <div id="start">
+                    <input id="startQuiz" type="button" name="StartQuiz" value="Start Quiz">
+                    <p>You only have 2 minutes to complete this quiz!</p>
+                </div>
+
+                <div id="questionBar">
+                    <span id="q0" class="bar"></span>
+                    <span id="q1" class="bar"></span>
+                    <span id="q2" class="bar"></span>
+                    <span id="q3" class="bar"></span>
+                    <span id="q4" class="bar"></span>
+                    <span id="q5" class="bar"></span>
+                    <span id="q6" class="bar"></span>
+                    <span id="q7" class="bar"></span>
+                    <span id="q8" class="bar"></span>
+                    <span id="q9" class="bar"></span>
+                </div>
+                <div id="quiz">
+
+                    <h2 id="ques"></h2>
+                    <div id="choices">
+                        <p class="mcq"></p>
+                        <p class="mcq"></p>
+                        <p class="mcq"></p>
+                        <p class="mcq"></p>
+                        <p class="checkboxes"></p>
+                        <p class="checkboxes"></p>
+                        <p class="checkboxes"></p>
+                        <p class="checkboxes"></p>
+                        <p id="shortAnswer"></p>
+                        <p id="numberAnswer"></p>
+                    </div>
+                </div>
+            <div id="navbutton">
+                <input id="enter" type="button" name="enter" value="Enter Answer">
+                <input id="next" type="button" name="nextbutton" value="Next Question" disabled>
+            </div>
+            <input id="submit" type="button" name="submitbutton" value="Submit">
+        </div>
+    </div>
+    <div id="tryAgain">
+        <h4 id="timer"></h4>
+        <input id='restart' type='button' name='restart' value="Try again">
+    </div>
+    <div id="lastPage">
+        <h2 id="scoreDescription"></h2>
+    </div>
+
+
+</div>
+
+
+</body>
+
+</html>

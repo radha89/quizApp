@@ -1,0 +1,89 @@
+/**
+ * Created by radhabhambwani on 2015-06-13.
+ */
+
+
+body, #background {
+    width: 320px;
+    height: 550px;
+    margin: 50px auto;
+}
+
+#background {
+    background-color: lightyellow;
+    border: solid black 2px;
+    padding: 7px;
+}
+
+#heading {
+    font-family: "Comic Sans MS", cursive, sans-serif;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 24px;
+    color: steelblue;
+}
+
+#container {
+    margin: 0 auto;
+}
+
+p {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color: darkblue;
+}
+
+
+#login {
+    border: black solid 2px;
+    padding: 10px;
+    width: 50%;
+    margin: 0 auto;
+    background: lightblue;
+}
+
+#navbutton {
+    visibility: hidden;
+}
+
+#quiz {
+    visibility: hidden;
+}
+
+#start {
+    visibility: hidden;
+}
+
+#regPage {
+    border: black solid 2px;
+    padding: 10px;
+    width: 60%;
+    visibility: hidden;
+    margin: 0 auto;
+}
+
+#submit {
+    visibility: hidden;
+}
+
+#shortAns {
+    visibility: hidden;
+}
+
+#enterAnswer {
+    visibility: hidden;
+}
+
+#questionBar{
+    text-align: center;
+    border: 2px darkblue dotted;
+    display: none;
+}
+
+.bar {
+    text-align: center;
+    font-size: 20px;
+    margin: 0 8px;
+}
+
+
+
