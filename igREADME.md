@@ -16,6 +16,8 @@ The course may be updated recently. I finished this course in early 2013.
 
 •	HTML 5 Local Storage
 
+•	Form Validation
+
 
 # Design
 
