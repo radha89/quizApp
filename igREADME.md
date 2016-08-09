@@ -65,7 +65,7 @@ After submitting the quiz, the final score is calculated and displayed on the sc
 
 # Desired Functionality
 
-•	Use PHP and MySQL (as opposed to local storage) for User Registration / User Authentication
+•	Use PHP and MySQL (as opposed to local storage) for User Registration / User Authentication and store user's high scores
 
 •	Improve on styles and formatting
 
