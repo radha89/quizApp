@@ -29,7 +29,7 @@ There are different types of questions in this game such as:
 
 •	Fill in the blank
 
-•	Number – drop down list
+•	Number 
 
 
 The app starts off with login page that allows the user to login or create an account (in this case, user is directed to the register page). The login credentials are stored within and retrieved from local storage (see Desired Functionality).  Once logged in, the Start Quiz button appears and the user has 2 minutes to complete quiz on clicking the button. Once the time is up, the quiz disappears and a message is displayed to the screen “Oops your time is up!” 
@@ -75,6 +75,9 @@ After submitting the quiz, the final score is calculated and displayed on the sc
 # Bugs & Fixes
 
 •	setTimeOut Function starting timer at login page instead of starting at click of start quiz button – fixed 08/06/2016.
+
+•	Scalability - After adding a new question, the question bar failed to update according to the new number of questions – fixed 08/14/2016.
+
 
 
 
