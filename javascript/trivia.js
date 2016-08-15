@@ -82,6 +82,13 @@ window.addEventListener("load", function() {
             choices: null,
             correctAnswer: "elephant",
             userAnswer: null
+        },
+        {
+            question: "Is this a trick question?",
+            type: "mc",
+            choices: ["Yes", "No", "Maybe", "I don't know"],
+            correctAnswer: 1,
+            userAnswer: null
         }
     ];
 
@@ -282,7 +289,7 @@ window.addEventListener("load", function() {
 
     /**
      * set time out function to stop the user from proceeding with quiz after 2 minutes
-     * 
+     *
      * @type {number}
      */
     function timeOutQuiz() {
@@ -290,7 +297,6 @@ window.addEventListener("load", function() {
             wrapper.style.display = "none";
             timerMsg.innerHTML = "Oops, your time is up!";
             restart.style.visibility = "visible";
-
         }, 120000);
     }
 
@@ -329,7 +335,9 @@ window.addEventListener("load", function() {
             question.innerHTML = currentQuestion;
         });
 
-        bar[pos].innerHTML = pos + 1;
+
+        //bar[pos].innerHTML = pos + 1;
+        questionBar.insertAdjacentHTML('beforeend', '<span id="q' + pos + '" class="bar">' + (pos+1) + '</span>');
     }
 
 
@@ -540,7 +548,7 @@ window.addEventListener("load", function() {
         }
 
         //store score in totalScore
-        totalScore = score;
+        totalScore = Math.round((score / allQuestions.length) * 100);
     }
 
     /**
@@ -574,7 +582,7 @@ window.addEventListener("load", function() {
         }
         calcScore();
         submitButton.style.visibility = "hidden";
-        navButton.innerHTML = "Your total score: " + totalScore;
+        navButton.innerHTML = "Your total score: " + totalScore + "%";
         showScoreDescription();
     }
 
@@ -601,11 +609,11 @@ window.addEventListener("load", function() {
         var showDesc = document.getElementById("scoreDescription");
         showDesc.style.color = "white";
 
-        if(score >= 0 && score <= 4) {
+        if(totalScore >= 0 && totalScore <= 49) {
             showDesc.innerHTML = "You suck!";
             lastPage.style.backgroundColor = "red";
         }
-        else if(score >= 5 && score <= 7) {
+        else if(totalScore >= 50 && totalScore <= 69) {
             showDesc.innerHTML = "You could have done a lot better!";
             lastPage.style.backgroundColor = "yellow";
         }
